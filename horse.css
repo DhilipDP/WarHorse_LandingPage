@@ -1,6 +1,7 @@
 html{
 	height: 100%;
 }
+
 body{
 	padding-top: 50px;
 	text-align: center;
@@ -19,6 +20,8 @@ body:before {
     background: url("Landing page image clear.jpg");
     background-repeat:no-repeat;
     background-size: cover;
+    -webkit-background-size:cover; 
+    -moz-background-size:cover; 
     height: 100%;
     opacity: 0.5;
 }
@@ -35,9 +38,8 @@ body:before {
 }
 #bottom-text{
 	font-size: 23px;
-	margin-top: 20%;
+	margin-top: 10%;
 	color:rgb(239,230,62);
-	
 	position: relative;
 	font-weight: bold; 
     z-index: 2;
@@ -68,5 +70,9 @@ img{
     #bottom-text{
     	font-size: 80%;
     }
-
+}
+@media only screen and (max-height: 575px){
+	html{
+		height: auto;
+	}
 }
